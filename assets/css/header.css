@@ -1,0 +1,29 @@
+header#main-header {
+    background-color: var(--gray-50);
+    border-bottom: 1px solid var(--gray-300);
+}
+
+header#main-header>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0px 24px;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+header#main-header .fav a {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: var(--blue-900);
+    text-decoration: none;
+}
+
+header#main-header .fav a:hover {
+    background-color: var(--gray-150);
+}

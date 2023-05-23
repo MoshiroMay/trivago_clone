@@ -1,0 +1,205 @@
+main #hero-header {
+    background-color: var(--gray-50);
+}
+
+main #hero-header>div {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    padding: 0px 24px;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+main #hero-header .titles-button {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    margin-top: 48px;
+}
+
+main #hero-header .titles-button .titles {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+main #hero-header .titles-button .titles h2 {
+    font-size: 28px;
+}
+
+main #hero-header .titles-button .titles span {
+    color: var(--blue-500);
+}
+
+main #hero-header .sites-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 16px 0px;
+}
+
+main #hero-header .sites-list .site {
+    display: flex;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+}
+
+main #hero-header .sites-list .site img {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: auto;
+    max-height: 1rem;
+}
+
+main #cards>div {
+    padding: 24px;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+main #cards .card-title {
+    font-size: 24px;
+    padding-bottom: 16px;
+}
+
+main #cards .card-title span {
+    color: var(--blue-500);
+}
+
+main #cards .cities-destinies {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+main #cards .card-subtitle {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+main #cards .cards-list {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+main #cards .card-item {
+    display: flex;
+}
+
+main #cards .card-item>div {
+    overflow: hidden;
+    position: relative;
+    border-radius: 0.375rem;
+}
+
+main #cards .card-item>div a {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    color: var(--blue-900);
+}
+
+main #cards .card-item>div img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+main #cards .card-item>div a div {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 12px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 12px;
+}
+
+main #cards .card-item>div a div .card-info {
+    padding-right: 0.5rem;
+    padding-left: 0.75rem;
+    margin-bottom: 0.25rem;
+    background-color: #ffffff;
+    border-radius: 0.375rem;
+}
+
+main #cards .card-item>div a div h4.card-info,
+main #cards .card-item>div a div .card-info span {
+    color: var(--blue-500);
+}
+
+main #about {
+    background-color: var(--gray-50);
+}
+
+main #about>div {
+    padding: 0px 24px 40px 24px;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+main #about .about-title h3 {
+    padding: 24px 0px 12px 0px;
+    font-size: 24px;
+}
+
+main #about .about-title h3 span {
+    color: var(--blue-500);
+}
+
+main #about .infos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+main #about .infos>div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    padding: 1rem 1rem 1.5rem 1rem;
+    background-color: #ffffff;
+    border-radius: 0.375rem;
+
+    font-size: 14px;
+}
+
+main #about .infos>div h3 {
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+
+    main #about .infos,
+    main #cards .cards-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main #hero-header .sites-list {
+        overflow: hidden;
+        position: relative;
+    }
+}

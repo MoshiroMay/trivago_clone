@@ -1,0 +1,46 @@
+:root {
+    --gray-50: #F9F9FA;
+    --gray-150: #F3F4F5;
+    --gray-300: #DFE0E4;
+    --blue-50: #F0F8EA;
+    --blue-500: #007CC2;
+    --blue-600: #1E40AF;
+    --blue-900: #0A1121;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+    color: var(--blue-900);
+}
+
+button {
+    cursor: pointer;
+}
+
+.button {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: #ffffff;
+    font-weight: 700;
+    background-color: var(--blue-500);
+    border: none;
+    border-radius: 16px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: var(--blue-600);
+}
