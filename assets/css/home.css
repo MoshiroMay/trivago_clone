@@ -64,7 +64,7 @@ main #hero-header .sites-list .site img {
 }
 
 main #cards>div {
-    padding: 24px;
+    padding: 32px 24px 48px 24px;
     width: 100%;
     max-width: 980px;
     margin: 0 auto;
@@ -94,6 +94,9 @@ main #cards .cards-list {
     list-style: none;
     display: flex;
     gap: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 main #cards .card-item {

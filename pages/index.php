@@ -1,3 +1,7 @@
+<?php
+require '../data/data.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -13,6 +17,16 @@
     <link rel="stylesheet" href="../assets/css/home.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
     <title>Trêsvaga</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/fav/favicon-16x16.png">
+    <link rel="manifest" href="../assets/images/fav/site.webmanifest">
+    <link rel="mask-icon" href="../assets/images/fav/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="../assets/images/fav/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="../assets/images/fav/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -20,12 +34,12 @@
     <header id="main-header">
         <div>
             <div class="logo">
-                <a href="./index.html">
+                <a href="./index.php">
                     <img src="../assets/images/logo.png" alt="Logo">
                 </a>
             </div>
             <div class="fav">
-                <a href="./index.html">
+                <a href="./index.php">
                     <img src="../assets/images/star.svg" alt="Star">
                     <p>Meus favoritos</p>
                 </a>
@@ -99,58 +113,43 @@
                             </div>
                             <div>
                                 <ul class="cards-list">
-                                    <li class="card-item">
-                                        <div>
-                                            <a href="">
-                                                <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_258,q_auto,w_258/categoryimages/59/29/59298_v40.jpeg"
-                                                    alt="">
-                                                <div>
-                                                    <h4 class="card-info">Gramado</h4>
-                                                    <p class="card-info"><span>5</span> Hotéis</p>
-                                                    <p class="card-info">Méd.: <span>R$542</span></p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li class="card-item">
-                                        <div>
-                                            <a href="">
-                                                <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_258,q_auto,w_258/categoryimages/59/29/59298_v40.jpeg"
-                                                    alt="">
-                                                <div>
-                                                    <h4 class="card-info">Gramado</h4>
-                                                    <p class="card-info"><span>5</span> Hotéis</p>
-                                                    <p class="card-info">Méd.: <span>R$542</span></p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li class="card-item">
-                                        <div>
-                                            <a href="">
-                                                <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_258,q_auto,w_258/categoryimages/59/29/59298_v40.jpeg"
-                                                    alt="">
-                                                <div>
-                                                    <h4 class="card-info">Gramado</h4>
-                                                    <p class="card-info"><span>5</span> Hotéis</p>
-                                                    <p class="card-info">Méd.: <span>R$542</span></p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li class="card-item">
-                                        <div>
-                                            <a href="">
-                                                <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_258,q_auto,w_258/categoryimages/59/29/59298_v40.jpeg"
-                                                    alt="">
-                                                <div>
-                                                    <h4 class="card-info">Gramado</h4>
-                                                    <p class="card-info"><span>5</span> Hotéis</p>
-                                                    <p class="card-info">Méd.: <span>R$542</span></p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </li>
+                                    <?php
+                                    foreach ($cities as $index => $city) {
+                                        $sum = 0;
+                                        $offerCount = 0;
+                                        $avg = 0;
+
+                                        foreach ($city['hoteis'] as $hotel) {
+                                            foreach ($hotel['offers'] as $offer) {
+                                                $sum += $offer['offer'];
+                                                $offerCount++;
+                                            }
+                                        }
+
+                                        $avg = $sum / $offerCount;
+                                        ?>
+                                        <li class="card-item">
+                                            <div>
+                                                <a href="./hoteis.php?type=city&index=<?= $index ?>">
+                                                    <img src="<?= $city['imgUrl'] ?>" alt="<?= $city['name'] ?>">
+                                                    <div>
+                                                        <h4 class="card-info">
+                                                            <?= $city['name'] ?>
+                                                        </h4>
+                                                        <p class="card-info"><span>
+                                                                <?= count($city['hoteis']) ?>
+                                                            </span> Hotéis</p>
+                                                        <p class="card-info">Méd.: <span>R$
+                                                                <?= intval($avg) ?>
+                                                            </span></p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <?php
+                                    }
+                                    ?>
                                 </ul>
                             </div>
                         </div>
@@ -161,58 +160,43 @@
                             </div>
                             <div>
                                 <ul class="cards-list">
-                                    <li class="card-item">
-                                        <div>
-                                            <a href="">
-                                                <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_258,q_auto,w_258/categoryimages/59/29/59298_v40.jpeg"
-                                                    alt="">
-                                                <div>
-                                                    <h4 class="card-info">Gramado</h4>
-                                                    <p class="card-info"><span>5</span> Hotéis</p>
-                                                    <p class="card-info">Méd.: <span>R$542</span></p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li class="card-item">
-                                        <div>
-                                            <a href="">
-                                                <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_258,q_auto,w_258/categoryimages/59/29/59298_v40.jpeg"
-                                                    alt="">
-                                                <div>
-                                                    <h4 class="card-info">Gramado</h4>
-                                                    <p class="card-info"><span>5</span> Hotéis</p>
-                                                    <p class="card-info">Méd.: <span>R$542</span></p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li class="card-item">
-                                        <div>
-                                            <a href="">
-                                                <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_258,q_auto,w_258/categoryimages/59/29/59298_v40.jpeg"
-                                                    alt="">
-                                                <div>
-                                                    <h4 class="card-info">Gramado</h4>
-                                                    <p class="card-info"><span>5</span> Hotéis</p>
-                                                    <p class="card-info">Méd.: <span>R$542</span></p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li class="card-item">
-                                        <div>
-                                            <a href="">
-                                                <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_258,q_auto,w_258/categoryimages/59/29/59298_v40.jpeg"
-                                                    alt="">
-                                                <div>
-                                                    <h4 class="card-info">Gramado</h4>
-                                                    <p class="card-info"><span>5</span> Hotéis</p>
-                                                    <p class="card-info">Méd.: <span>R$542</span></p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </li>
+                                    <?php
+                                    foreach ($destinies as $index => $destiny) {
+                                        $sum = 0;
+                                        $offerCount = 0;
+                                        $avg = 0;
+
+                                        foreach ($destiny['hoteis'] as $hotel) {
+                                            foreach ($hotel['offers'] as $offer) {
+                                                $sum += $offer['offer'];
+                                                $offerCount++;
+                                            }
+                                        }
+
+                                        $avg = $sum / $offerCount;
+                                        ?>
+                                        <li class="card-item">
+                                            <div>
+                                                <a href="./hoteis.php?type=destiny&index=<?= $index ?>">
+                                                    <img src="<?= $destiny['imgUrl'] ?>" alt="<?= $destiny['name'] ?>">
+                                                    <div>
+                                                        <h4 class="card-info">
+                                                            <?= $destiny['name'] ?>
+                                                        </h4>
+                                                        <p class="card-info"><span>
+                                                                <?= count($destiny['hoteis']) ?>
+                                                            </span> Hotéis</p>
+                                                        <p class="card-info">Méd.: <span>R$
+                                                                <?= intval($avg) ?>
+                                                            </span></p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <?php
+                                    }
+                                    ?>
                                 </ul>
                             </div>
                         </div>
@@ -291,7 +275,7 @@
         <div>
             <div class="logo-social">
                 <div class="logo">
-                    <a href="./index.html">
+                    <a href="./index.php">
                         <img src="../assets/images/logo.png" alt="Logo">
                     </a>
                 </div>
