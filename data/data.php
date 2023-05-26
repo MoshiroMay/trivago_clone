@@ -1,4 +1,4 @@
-<?php
+  <?php
 $cities = [
     [
         'name' => 'Gramado',
@@ -456,12 +456,364 @@ $destinies = [
                         'offer' => 100,
                     ],
                 ]
+                ],[
+                    'name' => 'Grand Palladium Imbassai Resort & Spa',
+                    'type' => 'Resort',
+                    'distance' => 0,
+                    'rating' => [8.3, 2171],
+                    'imgUrl' => 'https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/13/80/1380694_v6.jpeg',
+                    'offers' => [
+                        [
+                            'site' => 'Palladium Hotel Group',
+                            'offer' => 2772,
+                        ],
+                        [
+                            'site' => 'Booking.com',
+                            'offer' => 2772,
+                        ],
+                        [
+                            'site' => 'Hoteis',
+                            'offer' => 2772,
+                        ],
+                    ]
+                    ],
+        ],[
+            'name' => 'Blue Tree Premium Verbo Divino',
+            'type' => 'Hotel',
+            'distance' => 0,
+            'rating' => [8.1, 1899],
+            'imgUrl' => 'https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/10/47/104730_v4.jpeg',
+            'offers' => [
+                [
+                    'site' => 'Nosso preço mais baixo',
+                    'offer' => 317,
+                ],
+                [
+                    'site' => 'Agoda',
+                    'offer' => 317,
+                ],
+                [
+                    'site' => 'Hoteis.com',
+                    'offer' => 415,
+                ],
             ]
-        ],
+            ],[
+                'name' => 'Grand Palladium Imbassai Resort & Spa',
+                'type' => 'Resort',
+                'distance' => 0,
+                'rating' => [8.3, 2171],
+                'imgUrl' => 'https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/13/80/1380694_v6.jpeg',
+                'offers' => [
+                    [
+                        'site' => 'Nosso preço mais baixo',
+                        'offer' => 3141,
+                    ],
+                    [
+                        'site' => 'Palladium Hotel Group',
+                        'offer' => 3141,
+                    ],
+                    [
+                        
+                    ],
+                ]
+                ],
         'about' => [
             [
                 'title' => 'Brasil: O pais maravilhoso',
                 'text' => 'Destino imperdível para casais, o Brasil vem gradualmente mudando o perfil de seus visitantes. Novas atrações turísticas têm atraído cada vez mais famílias ao país, assim como festivais e eventos que oferecem programações para todas as idades. Para atender à demanda crescente, os hotéis têm ampliado suas instalações de lazer e serviços para facilitar a vida dos viajantes com crianças. No entanto, a vocação romântica do Brasil continua forte e sólida, com a oferta de hospedagens encantadoras, clima agradável e diversas opções gastronômicas típicas para desfrutar, como a famosa feijoada e a caipirinha!'
+            ],
+        ],
+    ],
+    [
+        'name' => 'São Paulo',
+        'imgUrl' => 'https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_258,q_auto,w_258/categoryimages/56/36/56365_v71.jpeg',
+        'hoteis' => [
+            [
+                'name' => 'B&B Hotels São Paulo Luz-Centro',
+                'type' => 'Hotel',
+                'distance' => 0,
+                'rating' => [8.4, 661],
+                'imgUrl' => 'https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/17/26/17263252_v1.jpeg',
+                'offers' => [
+                    [
+                        'site' => 'Max Milhas',
+                        'offer' => 169,
+                    ],
+                    [
+                        'site' => 'Hoteis.com',
+                        'offer' => 293,
+                    ],
+                    [
+                        'site' => 'Melia.com',
+                        'offer' => 255,
+                    ],
+                ]
+                ],[
+                    'name' => 'São Paulo Naçoes Unidas, by Meliá',
+                    'type' => 'Hotel',
+                    'distance' => 0,
+                    'rating' => [7.8, 1931],
+                    'imgUrl' => 'https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/10/45/104522_v11.jpeg',
+                    'offers' => [
+                        [
+                            'site' => 'Max Milhas',
+                            'offer' => 196,
+                        ],
+                        [
+                            'site' => 'Meliá.com',
+                            'offer' => 255,
+                        ],
+                        [
+                            'site' => 'Hoteis.com',
+                            'offer' => 293,
+                        ],
+                    ]
+                    ],[
+                        'name' => 'Blue Tree Thermas de Lins',
+                        'type' => 'Resort',
+                        'distance' => 0,
+                        'rating' => [8.8, 494],
+                        'imgUrl' => 'https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/13/12/1312693_v3.jpeg',
+                        'offers' => [
+                            [
+                                'site' => 'Nosso preço mais baixo',
+                                'offer' => 895,
+                            ],
+                            [
+                                'site' => 'MaxMilhas',
+                                'offer' => 975,
+                            ],
+                            [
+                                'site' => 'Booking.com',
+                                'offer' => 1.105,
+                            ],
+                        ]
+                        ],[
+                            'name' => 'Gran Chevalier Hotel',
+                            'type' => 'Hotel',
+                            'distance' => 0,
+                            'rating' => [8.1, 249],
+                            'imgUrl' => 'https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/28/11/2811308_v1.jpeg',
+                            'offers' => [
+                                [
+                                    'site' => 'Nosso preço mais baixo',
+                                    'offer' => 286,
+                                ],
+                                [
+                                    'site' => 'Hoteis.com',
+                                    'offer' => 286,
+                                ],
+                                [
+                                    'site' => 'Booking.com',
+                                    'offer' => 452,
+                                ],
+                            ]
+                            ],
+        ],
+        'about' => [
+            [
+                'title' => 'São Paulo, o maior estado.',
+                'text' => 'O estado de São Paulo é o maior poder econômico do país, com os aeroportos mais movimentados do Brasil, o Aeroporto Internacional de Guarulhos e o Aeroporto de Congonhas. Muito cosmopolita, o estado oferece atrações turísticas tanto na capital, como o Mercado Municipal, a Rua 25 de Março no centro da cidade e inúmeras atividades culturais, quanto nas lindas praias do litoral paulista, como Maresias, Ilhabela, e Guarujá ou na montanha, como a badalada Campos do Jordão. A oferta de acomodações também não é pequena. De redes internacionais de alto prestígio até pequenas pousadas a beira mar. O Hotel L’Hotel Porto Bay na capital, o Hotel Sofitel Jequitimar Guarujá e o Hotel Campos de Provence em Campos do Jordão são um pequeno exemplo da qualidade dos hotéis que o estado oferece. Acessando o trivago, o viajante consegue comparar preços de vários hotéis, ler opiniões e, dessa forma, não só encontrar a acomodação mais barata, e sim a que encaixe melhor no seu perfil.'
+            ],
+        ],
+    ],
+    [
+        'name' => 'Rio de Janeiro',
+        'imgUrl' => 'https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_258,q_auto,w_258/categoryimages/59/18/59182_v10.jpeg',
+        'hoteis' => [
+            [
+                'name' => 'Merlin Copacabana',
+                'type' => 'Hotel',
+                'distance' => 0,5,
+                'rating' => [7.8, 1189],
+                'imgUrl' => 'https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/97/50/97504_v39.jpeg',
+                'offers' => [
+                    [
+                        'site' => 'Nosso preço mais baixo',
+                        'offer' => 152,
+                    ],
+                    [
+                        'site' => 'Booking.com',
+                        'offer' => 152,
+                    ],
+                    [
+                        'site' => 'Trip.com',
+                        'offer' => 218,
+                    ],
+                ]
+                ],[
+                    'name' => 'Atlântico Travel',
+                    'type' => 'Hotel',
+                    'distance' => 0,5,
+                    'rating' => [7.7, 1800],
+                    'imgUrl' => 'https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/58/22/5822734_v1.jpeg',
+                    'offers' => [
+                        [
+                            'site' => 'Nosso preço mais baixo',
+                            'offer' => 142,
+                        ],
+                        [
+                            'site' => 'Max Milhas',
+                            'offer' => 142,
+                        ],
+                        [
+                            'site' => 'Booking.com',
+                            'offer' => 200,
+                        ],
+                    ]
+                    ],[
+                        'name' => 'Arena Leme',
+                        'type' => 'Hotel',
+                        'distance' => 0,1,
+                        'rating' => [8.7, 1533],
+                        'imgUrl' => 'https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/43/27/4327354_v5.jpeg',
+                        'offers' => [
+                            [
+                                'site' => 'Nosso preço mais baixo',
+                                'offer' => 350,
+                            ],
+                            [
+                                'site' => 'Hoteis.com',
+                                'offer' => 975,
+                            ],
+                            [
+                                'site' => 'Booking.com',
+                                'offer' => 1.105,
+                            ],
+                        ]
+                        ],[
+                            'name' => 'Windsor Oceanico',
+                            'type' => 'Hotel',
+                            'distance' => 0,2,
+                            'rating' => [8.9, 1.762],
+                            'imgUrl' => 'https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/43/45/4345728_v4.jpeg',
+                            'offers' => [
+                                [
+                                    'site' => 'Nosso preço mais baixo',
+                                    'offer' => 300,
+                                ],
+                                [
+                                    'site' => 'Max Milhas',
+                                    'offer' => 357,
+                                ],
+                                [
+                                    'site' => 'Booking.com',
+                                    'offer' => 348,
+                                ],
+                            ]
+                            ],
+        ],
+        'about' => [
+            [
+                'title' => 'Rio de Janeiro, Cidade Maravilhosa',
+                'text' => 'O Rio de Janeiro é uma cidade localizada no sudeste do Brasil e é um dos destinos turísticos mais populares do país. Conhecido por sua beleza natural deslumbrante e por pontos turísticos icônicos, o Rio de Janeiro atrai milhões de visitantes todos os anos.
+
+                Uma das atrações mais famosas da cidade é o Cristo Redentor, uma estátua colossal localizada no topo do Corcovado, que oferece uma vista panorâmica espetacular da cidade. A estátua se tornou um símbolo do Rio de Janeiro e do Brasil em todo o mundo. Outro ponto turístico famoso é o Pão de Açúcar, um complexo de montanhas que oferece vistas deslumbrantes da cidade e da Baía de Guanabara.
+                
+                Além das atrações naturais, o Rio de Janeiro é conhecido por suas praias mundialmente famosas, como Copacabana e Ipanema. Essas praias são conhecidas por sua areia branca, águas azuis e calçadão animado, onde moradores e visitantes desfrutam de atividades ao ar livre, como futebol de praia e vôlei.
+                
+                A cidade também é famosa por seu carnaval, considerado um dos maiores espetáculos do mundo. Durante o carnaval, as ruas do Rio de Janeiro são tomadas por desfiles de escolas de samba, festas e bailes, criando uma atmosfera de celebração única.O Rio de Janeiro é uma cidade localizada no sudeste do Brasil e é um dos destinos turísticos mais populares do país. Conhecido por sua beleza natural deslumbrante e por pontos turísticos icônicos, o Rio de Janeiro atrai milhões de visitantes todos os anos.
+
+                Uma das atrações mais famosas da cidade é o Cristo Redentor, uma estátua colossal localizada no topo do Corcovado, que oferece uma vista panorâmica espetacular da cidade. A estátua se tornou um símbolo do Rio de Janeiro e do Brasil em todo o mundo. Outro ponto turístico famoso é o Pão de Açúcar, um complexo de montanhas que oferece vistas deslumbrantes da cidade e da Baía de Guanabara.
+                
+                Além das atrações naturais, o Rio de Janeiro é conhecido por suas praias mundialmente famosas, como Copacabana e Ipanema. Essas praias são conhecidas por sua areia branca, águas azuis e calçadão animado, onde moradores e visitantes desfrutam de atividades ao ar livre, como futebol de praia e vôlei.
+                
+                A cidade também é famosa por seu carnaval, considerado um dos maiores espetáculos do mundo. Durante o carnaval, as ruas do Rio de Janeiro são tomadas por desfiles de escolas de samba, festas e bailes, criando uma atmosfera de celebração única.'
+            ],
+        ],
+    ], [
+        'name' => 'Curacao',
+        'imgUrl' => 'https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_258,q_auto,w_258/categoryimages/59/18/59182_v10.jpeg',
+        'hoteis' => [
+            [
+                'name' => 'Papagayo Beach Hotel',
+                'type' => 'Hotel',
+                'distance' => 0,
+                'rating' => [8,3, 561],
+                'imgUrl' => 'https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/30/68/30684_v8.jpeg',
+                'offers' => [
+                    [
+                        'site' => 'Nosso preço mais baixo',
+                        'offer' => 615,
+                    ],
+                    [
+                        'site' => 'Hoteis.com',
+                        'offer' => 791,
+                    ],
+                    [
+                        'site' => 'Hoteis.com',
+                        'offer' => 791,
+                    ],
+                ]
+                ],
+            [
+                    'name' => 'City Suites Curacao',
+                    'type' => 'Apart Hotel',
+                    'distance' => 0,
+                    'rating' => [8.6, 494],
+                    'imgUrl' => 'https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/47/64/4764194_v1.jpeg',
+                    'offers' => [
+                        [
+                            'site' => 'Nosso preço mais baixo',
+                            'offer' => 399,
+                        ],
+                        [
+                            'site' => 'Hoteis.com',
+                            'offer' => 445,
+                        ],
+                        [
+                            'site' => 'Hoteis.com',
+                            'offer' => 445,
+                        ],
+                    ]
+                    ],
+            [
+                        'name' => 'Saint Tropez Boutique Hotel',
+                        'type' => 'Hotel',
+                        'distance' => 0,1,
+                        'rating' => [8.7, 1533],
+                        'imgUrl' => 'https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/28/39/2839663_v4.jpeg',
+                        'offers' => [
+                            [
+                                'site' => 'Nosso preço mais baixo',
+                                'offer' => 691,
+                            ],
+                            [
+                                'site' => 'Hoteis.com',
+                                'offer' => 772,
+                            ],
+                            [
+                                'site' => 'Hoteis.com',
+                                'offer' => 772,
+                            ],
+                        ]
+                        ],
+            [
+                            'name' => 'Curacao Marriott Beach Resort',
+                            'type' => 'Hotel',
+                            'distance' => 0,
+                            'rating' => [8.4, 971],
+                            'imgUrl' => 'https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/30/68/30681_v6.jpeg',
+                            'offers' => [
+                                [
+                                    'site' => 'Nosso preço mais baixo',
+                                    'offer' => 1522,
+                                ],
+                                [
+                                    'site' => 'Hoteis.com',
+                                    'offer' => 1526,
+                                ],
+                                [
+                                    'site' => 'Hoteis.com',
+                                    'offer' => 1526,
+                                ],
+                            ]
+                            ],
+        ],
+        'about' => [
+            [
+                'title' => 'Rio de Janeiro, Cidade Maravilhosa',
+                'text' => ''
             ],
         ],
     ],
